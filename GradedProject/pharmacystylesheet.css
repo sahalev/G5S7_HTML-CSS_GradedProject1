@@ -1,0 +1,119 @@
+header h1{
+    margin:auto;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+body{
+    background-color: rgba(44, 40, 40, 0.7);
+
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    width: 100%;
+            /* Height of the footer*/
+    height: 40px;
+}
+#navigate{
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+}
+.parent-menu{
+    margin: 0%;
+    background-color:grey;
+}
+.parent-menu li a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+.parent-menu li{
+    padding: 10px;
+    display: inline-block;
+}
+.parent-menu li:hover{
+    background-color: rgba(0, 0, 0, 0.7);;
+}
+.parent-menu li:nth-child(2):hover .child-menu, .parent-menu li:nth-child(3):hover .child-menu{
+    display: block;
+}
+.child-menu{
+ /*   list-style-type: none;*/
+   /* display: none;   */
+   /* position: absolute;
+    top:40px;
+    left:0px;
+    white-space: nowrap;
+    background-color: lightgray;*/
+   
+    position: absolute;
+    width: auto;
+    max-width: 150px;
+    display: none;
+    top: 42.5px;
+    background-color: whitesmoke;
+    padding: 0%;
+}
+.child-menu li{
+    display: block;
+}
+.child-menu li:hover{
+    background-color: gainsboro;
+}
+.child-menu li a{
+    color: steelblue;
+    font-size: 16px;
+}
+#bg1{
+   background-image: url('Images/Animation/ani1.jpg');  
+   /*width: 1000px;
+   height: 400px;
+   max-height:100%;
+    max-width:100%;*/
+    width: 1000px; /* or any custom size */
+    height: 400px; 
+    object-fit: contain;
+   border: 2px solid steelblue;
+   animation-name: imagechanger;
+   animation-duration: 10s;
+   animation-iteration-count: infinite;
+}
+@keyframes imagechanger {
+    0% {
+        background-image: url('Images/Animation/ani1.jpg');  
+        width: 1500px; /* or any custom size */
+        height: 600px; 
+        background-repeat: none;
+    }
+    25% {
+        background-image: url('Images/Animation/ani2.png');  
+        width: 1500px; /* or any custom size */
+        height: 600px; 
+        background-repeat: none; 
+    }
+    50% {
+        background-image: url('Images/Animation/ani3.jpg');  
+        width: 1500px; /* or any custom size */
+        height: 600px; 
+        background-repeat: none;
+    }
+    75% {
+        background-image: url('Images/Animation/ani4.jpg');  
+        width: 1500px; /* or any custom size */
+        height: 600px; 
+        background-repeat: none;
+    }
+    100% {
+        background-image: url('Images/Animation/ani5.jpg');  
+        width: 1500px; /* or any custom size */
+        height: 600px; 
+        background-repeat: none; 
+    }
+}
+

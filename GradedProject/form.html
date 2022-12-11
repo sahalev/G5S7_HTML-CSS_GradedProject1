@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form</title>
+</head>
+<link rel="stylesheet" href="formstylesheet.css">
+<body>
+
+    <img align="right" src="Images/Lab-Test/lab-test.jpg" alt="">
+
+    <section id="block">
+  
+        <div>
+            <form action="" id="lab-form">
+                <h1>1.) Your Contact Details</h1>
+                
+                <input type="text" title="name" placeholder="Full Name" required>
+                <input type="text" title="pid" placeholder="Patient Id If Exists" required>
+                <br>
+                <input type="number" title="contact_no" min="6000000000" max="9999999999" placeholder="Contact Number" required>
+                <input type="email" title="email" placeholder="Email Id" required>
+                <br>
+
+                <h1>2.) Address</h1>
+                
+                <input type="text" title="hno" placeholder="House Number" required>
+                <input type="text" title="streetid" placeholder="Street" required>
+                <br>
+                <input type="text" title="area" placeholder="Area" required>
+                <br>
+
+                
+                <input list="dist" name="dist" placeholder="District" required>
+                <datalist id="dist">
+                  <option value="Kasargode">
+                  <option value="Kannur">
+                  <option value="Thiruvananthapuram">
+                  <option value="Ernakulam">
+                  <option value="Malappuram">
+                </datalist> 
+             
+                <h1>3.) Choose the test type</h1>
+                <input type="checkbox" id="test1" name="test1" value="CBC">
+                <label for="test1"> CBC</label><br>
+                <input type="checkbox" id="test2" name="test2" value="CU">
+                <label for="test2"> Complete Urine</label><br>
+                <input type="checkbox" id="test3" name="test3" value="LP">
+                <label for="test3"> Lipid Profile</label><br>
+                <input type="checkbox" id="test4" name="test4" value="TSH">
+                <label for="test4"> Thyroid Simulating Hormone</label><br>
+                <input type="checkbox" id="test5" name="test5" value="GT">
+                <label for="test5"> Glucose Test</label><br>
+
+                <h1>4.) Do you want a hard copy of the report also?</h1>
+           
+                <input type="radio" id="Y" name="REPORT" value="Yes">
+                <label for="Y">Yes</label><br>
+                <input type="radio" id="N" name="REPORT" value="No">
+                <label for="N">No</label><br>
+
+                <h1>5.) Select your comfortable date and time</h1>
+                <label for="date">Select a date:</label>
+                <input type="date" id="date" name="date">
+                <br>
+                <label for="appt">Select a time:</label>
+                <input type="time" id="appt" name="appt">
+                <br>
+                <button form="lab-form">Reset</button>
+                <button form="lab-form">Submit</button>
+
+                
+        </form>
+        </div>
+    </section>
+
+
+    
+</body>
+</html>
